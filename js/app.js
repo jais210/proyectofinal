@@ -2,14 +2,14 @@ var estudiantes = [];
 
 function obtenerListaEstudiantes() {
     // TO DO: Retornar la lista de estudiantes
-    return estudiantes;
+    return estudiantes; // Esta función genera la lista de estudiantes
 }
 
 function Estudiante(nombre, porTec, porHse) { // Objeto estudiante
     this.nombre = nombre;
     this.porcentajeTecnico = porTec;
     this.porcentajeHse = porHse;
-};
+}; 
 
 function agregarEstudiante() { // DONE
     // TO DO: Preguntar al usuario por el nombre, puntos técnicos y puntos de HSE de un estudiante
@@ -70,7 +70,7 @@ function buscar(nombre, estudiantes) {
     // Nota: NO IMPORTA SI EL USUARIO ESCRIBE EL NOMBRE EN MAYÚSCULAS O MINÚSCULAS
 
     return estudiantes.filter(function (estudiante) {
-        if (nombre == estudiante.nombre) {
+        if (nombre.toLowerCase() == estudiante.nombre.toLowerCase()) {
 
             return true
         } else {
