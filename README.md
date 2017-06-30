@@ -1,2 +1,0 @@
-# proyectofinal
-Primer Sprint
